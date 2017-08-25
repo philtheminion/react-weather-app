@@ -13,7 +13,7 @@ class App extends React.Component {
     var location = encodeURIComponent(this.state.location);
 
     var urlPrefix = 'http://api.openweathermap.org/data/2.5/forecast?q=';
-    var urlSuffix = '&APPID=YOURAPIKEY&units=metric';
+    var urlSuffix = '&APPID=YOURAPIKEY&units=imperial';
     var url = urlPrefix + location + urlSuffix;
 
     var self = this;
@@ -53,7 +53,7 @@ class App extends React.Component {
         </form>
         <p className="temp-wrapper">
           <span className="temp">{ currentTemp }</span>
-          <span className="temp-symbol">°C</span>
+          <span className="temp-symbol">°F</span>
           </p>
        </div> 
     );

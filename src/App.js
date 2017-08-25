@@ -13,7 +13,7 @@ class App extends React.Component {
     var location = encodeURIComponent(this.state.location);
 
     var urlPrefix = 'http://api.openweathermap.org/data/2.5/forecast?q=';
-    var urlSuffix = '&APPID=dc4714c5b142528708b3b032aaaf08d7&units=metric';
+    var urlSuffix = '&APPID=YOURAPIKEY&units=metric';
     var url = urlPrefix + location + urlSuffix;
 
     var self = this;
